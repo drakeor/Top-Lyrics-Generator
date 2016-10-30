@@ -1,0 +1,70 @@
+body {
+  background: #050505;
+  background-image: url("https://drakeor.com/wp-content/uploads/2016/10/wallpaper.jpg");
+  color: #F5F5F5;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+button {
+  background: #192231;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 0.5em 0.8em;
+  border-radius: 0.2em;
+  border-color: #666666;
+  border: 1px;
+}
+
+a {
+  color: #DDDDDD;  
+}
+
+button:hover {
+  background: #595251;
+}
+
+button:active {
+  background: #111111;
+}
+
+.container {
+  margin: auto;
+  width: 630px;
+  height: 280px;
+  padding: 1em;
+}
+
+.text_container {
+  padding: 2em 0.5em;
+}
+
+.lyricbox {
+  text-align: center;
+  position: relative;
+  padding: 1em;
+}
+
+.lyricbox:after {
+  border: 3px solid;
+  border-color: #0F0F0F;
+  text-align: center;
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 600px;
+  height: 280px;
+  background-color: #000000;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #C0C0E0;
+}

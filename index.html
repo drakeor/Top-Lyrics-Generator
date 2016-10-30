@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lyrics Generator for Modern Music</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class='container'>
+    <div class='lyricbox'>
+
+      <!-- Generate lyrics button-->
+      <button onclick='getLyrics(8, 100);'>
+        Generate Lyrics<br />
+        <small>(Using Top 100 Words)</small>       </button>
+      &nbsp;&nbsp;&nbsp;
+
+      <!-- Text to speech button -->
+      <button onclick='responsiveVoice.speak(lastPhrase);'>
+        Synthesize Speech<br />
+        <small>(Experimental)</small>
+      </button>
+      <br />
+
+      <!-- Actual lyric container -->
+      <div class='text_container'>
+        <div id='lyrics'>
+          Click 'Generate Lyrics' to begin
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer">
+        Lyrics are generated using the most frequent words in the Top 100 songs of September 2016. Common english words are omitted.<br />
+        Created by <a href="http://www.drakeor.com/">Drakeor</a> 2016
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Load scripts at the end-->
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
